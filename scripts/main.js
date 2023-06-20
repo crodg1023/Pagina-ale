@@ -6,7 +6,7 @@ img1.addEventListener('click', () => {
     location.replace('20 razones.html');
 })
 img2.addEventListener('click', () => {
-    location.replace('vuelta al sol 3D.html');
+    location.replace('Vuelta al sol 3D.html');
 })
 img3.addEventListener('click', () => {
     location.replace('20 estrellitas.html');
