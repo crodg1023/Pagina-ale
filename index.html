@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/luna-icon.png" type="image/icon">
+    <title>Bienvenida...</title>
+    <style>
+        body {
+            font-family: 'Lobster', cursive;
+            background-color: #8cc6db;
+        }
+        form {
+            width: 600px;
+            margin: 200px auto;
+        }
+
+        div {
+            width: 100%;
+            margin: 15px auto;
+        }
+
+        label {
+            color: #2379a1;
+            display: block;
+            padding: 20px;
+            font-size: 25px;
+        }
+
+        input {
+            background-color: #aec9d4;
+            width: 96%;
+            padding: 10px;
+            border: 1px solid #797979;
+            font-size: 20px;
+            margin-left: 20px;
+            border-radius: 3px;
+            font-family: 'Lobster', cursive;
+            font-weight: light;
+        }
+
+        #button {
+            margin: 20px;
+            padding: 10px;
+            width: 100px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: 'Lobster', cursive;
+            background-color: #8fb5cc;
+        }
+        h2 {
+            margin: 20px;
+            display: none;
+            color: #235ea1;
+        }
+        h1 {
+            margin: 20px;
+            color: #238aa1;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h1>Bienvenida...</h1>
+        <h1>Para poder entrar a tu sorpresa, es necesario que resuelvas los siguientes acertijos</h1>
+        <div>
+            <label for="">Érase un lluvioso y oscuro día en 2019, cuando dos jóvenes decidieron empezar su historia...</label>
+            <input type="text" placeholder="Respuesta" id="Q1">
+            <span></span>
+        </div>
+        <div>
+            <label for="">Hace un tiempo decidiste escribirme otra vez, sin saber que maracaría un nuevo comienzo...</label>
+            <input type="text" placeholder="Respuesta" id="Q2">
+            <span></span>
+        </div>
+        <div>
+            <label for="">Hace 20 años, una nueva estrellita nacía...</label>
+            <input type="text" placeholder="Respuesta" id="Q3">
+            <span></span>
+        </div>
+        <h2>Intenta nuevamente...</h2>
+        <img src="images/kermit.png" alt="">
+        <input type="button" value="Entrar" id="button">
+    </form>
+</body>
+</html>
+<script>
+    const boton = document.querySelector('#button');
+    const texto1 = document.querySelector('#Q1');
+    const texto2 = document.querySelector('#Q2');
+    const texto3 = document.querySelector('#Q3');
+    const mensaje = document.querySelector('h2');
+    const image = document.querySelector('img');
+    const respuesta1 = '18';
+    const respuesta2 = '12';
+    const respuesta3 = '20';
+
+    boton.addEventListener('click', () => {
+        if (texto1.value == respuesta1 && texto2.value == respuesta2 && texto3.value == respuesta3) {
+            location.replace('main.html');
+        } else {
+            mensaje.style.display = 'block';
+            image.style.display = 'block';
+        }
+    });
+</script>

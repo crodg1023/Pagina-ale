@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+
+body {
+    background-color: #b2dafa;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23a0d2fa' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    font-family: 'Lobster Two', cursive;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    animation: appear 2s ease-in-out;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 50px;
+}
+
+.container {
+    margin: 100px;
+}
+
+.parte1 {
+    background-color: #badbf7;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%2370a2cd' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    border: rgb(160, 210, 250) 4px solid;
+    text-align: center;
+    width: 600px;
+    height: 650px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.foto img {
+    width: 70%;
+    margin-top: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+
+.foto img:hover {
+    transform: scale(1.1);
+}
+
+.foto {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foto h1 {
+    margin-top: 10px;
+}
+
+.parte1-cont {
+    display: flex;
+}
+
+.foto-mid {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foto-mid img {
+    width: 70%;
+    height: 500px;
+    margin-top: 50px;
+    border-radius: 10px;
+    transition: 0.5s all ease-in-out;
+    cursor: pointer;
+}
+
+.foto-mid img:hover {
+    transform: scale(1.1);
+}
+
+.foto-mid h1 {
+    margin-top: 10px;
+}
+
+#msj {
+    font-size: 50px;
+    margin: 50px;
+}
+
+@keyframes appear {
+    from {opacity: 0;}
+    to {opacity: 100;}
+}
+
